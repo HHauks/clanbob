@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <style>.lw { font-size: 60px; }</style>
+        </head>
+        <body>
+            
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOB Sparkling</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+        .sparkling {
+            font-size: 100px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+            animation: sparkle 1.5s infinite alternate;
+            position: relative;
+            z-index: 2;
+        }
+        .names-container {
+            position: absolute;
+            top: 70%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .name {
+            font-size: 30px;
+            color: white;
+            animation: float 3s infinite alternate ease-in-out, changeColor 3s infinite alternate;
+        }
+        @keyframes sparkle {
+            0% { text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; }
+            50% { text-shadow: 0 0 15px yellow, 0 0 25px yellow, 0 0 35px yellow; }
+            100% { text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        @keyframes changeColor {
+            0% { color: white; }
+            50% { color: red; }
+            100% { color: blue; }
+        }
+    </style>
+
+
+    <div class="sparkling">BOB</div>
+    <div class="names-container">
+        <div class="name">MRkeli</div>
+        <div class="name">Icelandiclama</div>
+        <div class="name">Mainbear</div>
+    </div>
+
+
+
+            <script>// Write JavaScript here<!DOCTYPE html>
+</script>
+        
+    
+</body>
