@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-            <style>.lw { font-size: 60px; }</style>
-        </head>
-        <body>
-            
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOB Sparkling</title>
@@ -42,6 +36,13 @@
             color: white;
             animation: float 3s infinite alternate ease-in-out, changeColor 3s infinite alternate;
         }
+        .traitor {
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+            text-shadow: 0 0 10px red, 0 0 20px crimson, 0 0 30px darkred;
+            animation: float 3s infinite alternate ease-in-out, traitorPulse 1.5s infinite alternate;
+        }
         @keyframes sparkle {
             0% { text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; }
             50% { text-shadow: 0 0 15px yellow, 0 0 25px yellow, 0 0 35px yellow; }
@@ -56,20 +57,19 @@
             50% { color: red; }
             100% { color: blue; }
         }
+        @keyframes traitorPulse {
+            0% { text-shadow: 0 0 10px red, 0 0 20px crimson, 0 0 30px darkred; }
+            100% { text-shadow: 0 0 20px darkred, 0 0 30px crimson, 0 0 40px red; }
+        }
     </style>
-
-
+</head>
+<body>
     <div class="sparkling">BOB</div>
     <div class="names-container">
         <div class="name">MRkeli</div>
         <div class="name">Icelandiclama</div>
         <div class="name">Mainbear</div>
+        <div class="traitor">isheep8 (Traitor)</div>
     </div>
-
-
-
-            <script>// Write JavaScript here<!DOCTYPE html>
-</script>
-        
-    
 </body>
+</html>
